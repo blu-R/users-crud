@@ -1,0 +1,76 @@
+.overlay-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+}
+
+.modal-form {
+    background: #fff;
+
+    padding: 30px;
+
+    width: 450px;
+    position: relative;
+    z-index: 77;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.modal-form h1 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 700;
+}
+
+.modal-form div {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal-form label {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+}
+
+.modal-form input {
+    height: 40px;
+    color: #bdbdbd;
+    font-size: 18px;
+    background-color: #f9fafc;
+    outline: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    border: 1px solid #c3c1c1;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+.btn-save {
+    background-color: #555a88;
+    width: 100%;
+    border-style: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.fa-calendar {
+    font-size: 18px;
+    padding-right: 10px;
+    align-self: flex-end;
+    position: relative;
+    color: #212121;
+    bottom: 27px;
+}

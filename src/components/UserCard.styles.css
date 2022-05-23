@@ -1,0 +1,71 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* column-gap: 5px; */
+}
+
+.cards-container li {
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.user-card {
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+.user-card hr {
+    margin: 7px 0;
+    color: #e5e5e5;
+    /* height: 0.5%; */
+}
+
+.user-card h2 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.user-card h4 {
+    text-transform: uppercase;
+    color: #d3d3d3;
+    margin-top: 10px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.user-card p .fa-gift {
+    margin-right: 5px;
+}
+
+.user-card p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 18 px;
+}
+.card-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.button-del {
+    background-color: #d85d5d;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.button-del,
+.button-edit {
+    height: 43px;
+    width: 43px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 18px;
+}
+
+.button-edit {
+    border: 1px solid #bdbdbd;
+    background-color: #f6f6f6;
+    color: #d3d3d3;
+}
