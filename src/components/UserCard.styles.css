@@ -41,6 +41,7 @@
 
 .user-card p {
     font-family: "Helvetica Neue", sans-serif;
+    text-transform: lowercase;
     font-weight: 300;
     font-size: 18 px;
 }

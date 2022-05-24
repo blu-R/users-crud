@@ -5,12 +5,14 @@ import { useForm } from "react-hook-form";
 import "./UserForm.styles.css";
 
 function UserForm({ fGetUsers, userSelected, deselectUser, close, newUser }) {
-    useEffect(() => {
-        reset(userSelected);
-        console.log(userSelected);
-    }, [userSelected]);
-
     const { register, handleSubmit, reset } = useForm();
+
+    useEffect(() => {
+        if (userSelected) {
+            reset(userSelected);
+            console.log(userSelected);
+        }
+    }, [userSelected]);
 
     const defaultValues = {
         first_name: "",
@@ -34,6 +36,7 @@ function UserForm({ fGetUsers, userSelected, deselectUser, close, newUser }) {
                     fGetUsers();
                     reset(defaultValues);
                     deselectUser();
+                    console.log("putin");
                 })
                 .catch((error) => console.log(error.response));
         } else {
